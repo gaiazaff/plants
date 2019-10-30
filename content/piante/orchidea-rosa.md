@@ -1,6 +1,11 @@
 ---
 title: 'Orchidea rosa'
 date: '2019'
+categories:
+  - piante
+tags:
+  - interno
+  - fiori
 ---
 Orchidea rosa con forte profumo.
 

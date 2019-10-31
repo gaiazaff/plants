@@ -1,45 +1,40 @@
-baseurl = "/"
-languageCode = "en-us"
-title = "Manuale delle piante"
-theme = "hugo-lithium"
-googleAnalytics = ""
-disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-
-[permalinks]
-    post = "/:slug/"
-
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-[[menu.main]]
-    name = "Tags"
-    url = "/tags"
-[[menu.main]]
-    name = "Piante"
-    url = "/categories/piante"
-[[menu.main]]
-    name = "Supplementi"
-    url = "/categories/supplementi"
+baseurl                  = "https://example.com/"           # Your domain name. Must end with "/"
+languageCode             = "en-us"
+defaultContentLanguage   = "it"
+isMultilingual           = false
+title                    = "Manuale delle Piante"
+theme                    = "sam"
+pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
+pygmentsCodefences       = true
+# googleAnalytics        = ""                               # Tracking code, eg. "UA-111111111-1"
+pluralizeListTitles      = false
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    dateform             = "Mon Jan 02, 2006"
+    dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
+    favicon              = "sam.ico"
+    homepage             = "main"                           # What to call the home page link
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+# Metadata for Open Graph and Twitter
+#    description          = "A new Hugo site."               # Max 160 characters show in search results
+#    images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
+#    title                = "Call me Sam"
 
-    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
+[[params.mainMenu]]
+    link = "/piante"
+    text = "piante"
 
-    # path to the favicon, under "static"
-    favicon = "favicon.ico"
+[[params.mainMenu]]
+    link = "/supplementi"
+    text = "supplementi"
+    
+[[params.mainMenu]]
+    link = "/tags"
+    text = "tags"
 
-    [params.logo]
-    url = "ananas.jpg"
-    width = 50
-    height = 50
-    alt = "Logo"
+[[params.mainMenu]]
+    link = "/about/"
+    text = "info"
 
+[imaging]
+    quality = 75

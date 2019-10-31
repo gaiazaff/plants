@@ -1,4 +1,4 @@
-baseurl                  = "https://example.com/"           # Your domain name. Must end with "/"
+baseurl                  = "/"           # Your domain name. Must end with "/"
 languageCode             = "en-us"
 defaultContentLanguage   = "it"
 isMultilingual           = false
@@ -7,13 +7,13 @@ theme                    = "sam"
 pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
 pygmentsCodefences       = true
 # googleAnalytics        = ""                               # Tracking code, eg. "UA-111111111-1"
-pluralizeListTitles      = false
-
+pluralizeListTitles      = false                            # keep name of categories as is
+ignoreFiles              = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params]
-    dateform             = "Mon Jan 02, 2006"
+    dateform             = "2006"
     dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
     favicon              = "sam.ico"
-    homepage             = "main"                           # What to call the home page link
+    homepage             = "Home"                           # What to call the home page link
 
 # Metadata for Open Graph and Twitter
 #    description          = "A new Hugo site."               # Max 160 characters show in search results

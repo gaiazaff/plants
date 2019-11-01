@@ -5,3 +5,5 @@
 .Ruserdata
 public/
 themes/
+# Local Netlify folder
+.netlify
